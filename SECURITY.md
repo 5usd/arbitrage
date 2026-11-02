@@ -1,0 +1,1 @@
+Please do not post credentials, private CVs or account information in issues. Report a security concern privately through the repository owner's GitHub profile before sharing reproduction details publicly.
