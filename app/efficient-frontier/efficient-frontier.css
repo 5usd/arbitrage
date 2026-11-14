@@ -1,0 +1,96 @@
+/* Efficient frontier workspace — navy terminal surfaces. */
+.ef-panel {
+  border: 1px solid #26344a;
+  background: #0e1725;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.ef-panel-title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a8b7ca;
+}
+.ef-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 30px;
+  padding: 4px 10px;
+  border: 1px solid #26344a;
+  border-radius: 6px;
+  background: #111d2f;
+  color: #c9d4e3;
+  font-size: 11.5px;
+  font-weight: 500;
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease,
+    color 120ms ease;
+}
+.ef-btn:hover:not(:disabled) {
+  border-color: #3b5272;
+  color: #fff;
+}
+.ef-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.ef-btn-primary {
+  background: #275fc7;
+  border-color: #3a74de;
+  color: #fff;
+}
+.ef-btn-primary:hover:not(:disabled) {
+  background: #2f6bd8;
+}
+.ef-btn-danger {
+  background: #a83636;
+  border-color: #c24848;
+  color: #fff;
+}
+.ef-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  color: #6f7f96;
+  transition: color 120ms ease, background-color 120ms ease;
+}
+.ef-icon-btn:hover:not(:disabled) {
+  color: #e8edf5;
+  background: #17253b;
+}
+.ef-icon-btn:disabled {
+  opacity: 0.35;
+}
+.ef-input {
+  height: 28px;
+  border: 1px solid #26344a;
+  border-radius: 5px;
+  background: #0b1320;
+  padding: 0 6px;
+  color: #fff;
+  font-size: 12px;
+  font-family: var(--font-geist-mono), monospace;
+}
+.ef-input:focus {
+  outline: none;
+  border-color: #77a9ff;
+}
+.ef-input:disabled {
+  opacity: 0.45;
+}
+:is(.ef-btn, .ef-icon-btn, .ef-input, button, summary, [role="radio"], [role="tab"]):focus-visible {
+  outline: 2px solid #91baff;
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ef-btn,
+  .ef-icon-btn {
+    transition: none;
+  }
+}
