@@ -122,6 +122,13 @@ export default function Header({
         {/* ACTIONS */}
 
         <div className="relative flex shrink-0 items-center gap-1.5 sm:gap-2">
+          <Link
+            href="/efficient-frontier"
+            className="hidden h-8 items-center rounded-lg border border-zinc-800 bg-[#181818] px-2.5 text-xs font-medium text-zinc-300 transition-colors hover:border-zinc-700 hover:text-white sm:flex sm:h-9"
+          >
+            Efficient Frontier
+          </Link>
+
           <InfoButton slug="triangular-arbitrage" />
 
           <button
